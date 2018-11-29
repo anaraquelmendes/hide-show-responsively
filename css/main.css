@@ -18,23 +18,23 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  background-color: #fff;
-}
-
 img {
   display: inline-block;
   width: 100%;
 }
 
-img:nth-child(2), img:nth-child(4) {
+img:nth-child(odd) {
+  display: inline-block;
+}
+
+img:nth-child(even) {
   display: none;
 }
 
 @media only screen and (min-width: 25em) {
 
   img {
-    width: 49%;
+    width: 50%;
     float: left;
     padding: .1em;
   }
@@ -49,7 +49,7 @@ img:nth-child(2), img:nth-child(4) {
 
   img {
     display: inline-block;
-    width: 32%;
+    width: 33%;
   }
 
   img:nth-child(1) {
@@ -65,13 +65,13 @@ img:nth-child(2), img:nth-child(4) {
     margin-right: 2em;
   }
 
-  img:nth-child(1), img:nth-child(4), img:nth-child(2), img:nth-child(3) {
+  img {
     display: inline-block;
-    width: 24.4%;
+    width: 25%;
   }
 
-  img {
+  img:nth-child(1) {
   display: inline-block;
-  }
+}
 
 }
