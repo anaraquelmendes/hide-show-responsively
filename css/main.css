@@ -4,6 +4,7 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+
 html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -34,10 +35,12 @@ img:nth-child(2), img:nth-child(4) {
 
   img {
     width: 49%;
+    float: left;
+    padding: .1em;
   }
 
   img:nth-child(2), img:nth-child(4) {
-    display: inline-block;
+    display: inline;
   }
 
 }
@@ -49,7 +52,7 @@ img:nth-child(2), img:nth-child(4) {
     width: 32%;
   }
 
-  img:nth-child(4) {
+  img:nth-child(1) {
     display: none;
   }
 
@@ -57,18 +60,18 @@ img:nth-child(2), img:nth-child(4) {
 
 @media only screen and (min-width: 60em) {
 
-  img:nth-child(4) {
-    display: inline-block;
-    width: 24%;
+  body {
+    margin-left: 2em;
+    margin-right: 2em;
   }
 
-  img:nth-child(1), img:nth-child(2), img:nth-child(3) {
+  img:nth-child(1), img:nth-child(4), img:nth-child(2), img:nth-child(3) {
     display: inline-block;
-    width: 24%;
+    width: 24.4%;
   }
 
   img {
-    display: inline-block;
+  display: inline-block;
   }
 
 }
